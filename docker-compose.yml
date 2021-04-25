@@ -8,11 +8,11 @@ services:
       MYSQL_HOST: mysql
       MYSQL_PASS: 'helloload'
       MYSQL_DB: 'subscan'
-      REDIS_ADDR: redis:6379
-      CHAIN_WS_ENDPOINT: 'wss://crab.darwinia.network'
-      NETWORK_NODE: 'crab'
+      REDIS_ADDR: redis
+      REDIS_PORT: 6479
+      CHAIN_WS_ENDPOINT: 'ws://polkadot-test:9944'
+      NETWORK_NODE: 'westend'
       WEB_HOST: 'http://subscan-api:4399'
-      DEPLOY_ENV: 'prod'
     ports:
       - '4399:4399'
     networks:

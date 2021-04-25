@@ -2,6 +2,8 @@ FROM golang:1.14.6 as builder
 
 WORKDIR /subscan
 
+ENV GOPROXY=https://goproxy.cn,direct
+
 COPY go.mod go.sum ./
 RUN go mod download
 COPY . /subscan
