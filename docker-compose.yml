@@ -10,13 +10,14 @@ services:
       MYSQL_DB: 'subscan'
       REDIS_ADDR: redis
       REDIS_PORT: 6479
-      CHAIN_WS_ENDPOINT: 'ws://polkadot-test:9944'
-      NETWORK_NODE: 'westend'
+      CHAIN_WS_ENDPOINT: 'wss://cn3.dev.ad3.app:8443'
+      NETWORK_NODE: 'ad3'
       WEB_HOST: 'http://subscan-api:4399'
     ports:
       - '4399:4399'
     networks:
       - app_net
+
   subscan-observer:
     environment:
       <<: *app_base
