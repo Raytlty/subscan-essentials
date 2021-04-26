@@ -19,8 +19,7 @@ func Install(conf string) {
 		dbHost := util.GetEnv("MYSQL_HOST", "127.0.0.1")
 		dbUser := util.GetEnv("MYSQL_USER", "root")
 		dbPass := util.GetEnv("MYSQL_PASS", "12345678")
-		dsn := fmt.Sprintf("%s:%s@tcp(%s)/%s", dbUser, dbPass, dbHost, "subscan")
-        fmt.Println("%s", dsn)
+		dsn := fmt.Sprintf("%s:%s@tcp(%s)/%s", dbUser, dbPass, dbHost, "")
 		db, err := sql.Open("mysql", dsn)
 		if err != nil {
 			panic(err)
