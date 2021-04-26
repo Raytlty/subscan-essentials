@@ -10,8 +10,8 @@ var (
 	AddressType               = GetEnv("SUBSTRATE_ADDRESS_TYPE", "42")
 	BalanceAccuracy           = GetEnv("SUBSTRATE_ACCURACY", "9")
 	CommissionAccuracy        = GetEnv("COMMISSION_ACCURACY", "9")
-	WSEndPoint                = GetEnv("CHAIN_WS_ENDPOINT", "wss://crab.darwinia.network")
-	NetworkNode               = GetEnv("NETWORK_NODE", "crab")
+	WSEndPoint                = GetEnv("CHAIN_WS_ENDPOINT", "wss://cn3.dev.ad3.app:8443")
+	NetworkNode               = GetEnv("NETWORK_NODE", "ad3")
 	IsProduction              = os.Getenv("DEPLOY_ENV") == "prod"
 )
 
